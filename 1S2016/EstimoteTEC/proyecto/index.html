@@ -1,0 +1,93 @@
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EstimoteTEC</title>
+        <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="angular/angular.1.5.6.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    </head>
+    <body>
+        <!--PAGINA-->
+        <div>
+            <!--MENU-->
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img alt="logo.png" src="img/logo.png">
+                </a>
+                <ul class="nav nav-tabs">
+                   <!-- <li id="li-perfil" class="li-navbar" role="presentation"><a href="#">Perfil</a></li>
+                    <li id="li-informacion" class="li-navbar" role="presentation"><a href="#">Información</a></li> -->
+                </ul>
+            </div>
+            <!--CONTENIDO-->
+            <div>
+                <!--LOGIN & REGISTRO-->
+                <div class="login-page">
+                    <div class="form">
+                        <form class="register-form">
+                            <input id="correo-registro" type="text" placeholder="correo"/>
+                            <input id="contraseena-registro" type="password" placeholder="contraseña"/>
+                            <button id="button-crear" type="submit">Crear Cuenta</button>
+                            <p class="message">Ya poseé una cuenta? <a href="#">Ingresar</a></p>
+                        </form>
+                        <form class="login-form">
+                            <input id="correo-login" type="text" placeholder="correo"/>
+                            <input id="contrasena-login" type="password" placeholder="contraseña"/>
+                            <button id="button-ingresar" type="submit">Ingresar</button>
+                            <p class="message">No tenés cuenta? <a href="#">Crear una cuenta</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="content-page">
+                Noticia
+                   <textarea rows="10"  id="noticia"  required="required" ></textarea>
+                  <button id="button-noticias" onclick="Subir()" type="submit">Subir</button>
+            </div>
+            <div class="perfil-page">
+                <!-- PERFIL DE LA PAGINA -->
+                <div class="form-perfil">
+                    <form class="perfil-form">
+                        <label class="chechbox-label">
+                            Estoy en la oficina:
+                            <input id="toggle-oficina" checked type="checkbox" data-toggle="toggle"/>
+                        </label>
+                        <label>Correo:
+                            <input type="text" placeholder="correo" readonly/ >
+                        </label>
+                        <label>Contraseña:
+                            <input id="contrasena-perfil" type="password" placeholder="contraseña"/>
+                        </label>
+                        <label>Nueva Contraseña:
+                            <input id="nueva-contrasena-perfil" type="password" placeholder="nueva contraseña"/>
+                        </label>
+                        <button id="button-actualizar" type="submit">Actualizar</button>
+                    </form>
+                    </div>
+                <button type="button" class="btn btn-link"></button>
+            </div>
+            <div class="informacion-page">
+                <!-- INFORMACION DE LA PAGINA -->
+                <div class="form-info">
+                    <form class="info-form">
+                        <label>Título:
+                            <input id="info-titulo" type="text" placeholder="titulo"/>
+                        </label>
+                        <label>Información:
+                            <textarea id="info" class="form-control" rows="5" cols="27"></textarea>
+                        </label>
+                        <button id="button-publicar" type="submit">Publicar</button>
+                    </form>
+                    </div>
+                <button type="button" class="btn btn-link"></button>
+            </div>
+        </div>
+    </body>
+</html>
