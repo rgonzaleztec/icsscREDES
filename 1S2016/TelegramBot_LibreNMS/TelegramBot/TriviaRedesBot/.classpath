@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
+	<classpathentry excluding="**/*.java" kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/jtelebot-core-0.1.0.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/logback-core-1.1.7.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/concurrentlinkedhashmap-lru-1.4.2.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/logback-classic-1.1.7.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/jackson-all-1.9.0.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
