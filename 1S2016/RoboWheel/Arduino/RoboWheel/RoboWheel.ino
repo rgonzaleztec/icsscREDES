@@ -159,14 +159,15 @@ void mover_carrito(){
     microM.Motors(-velocidad_carro, velocidad_carro, 0, 0); // update motor controller
   }
   if (estado == 'b') {      // Boton IZQ
-    microM.Motors(0, velocidad_carro, 0, 0); // update motor controller
+    
+    microM.Motors(-velocidad_carro, 0, 0, 0); // update motor controller
 
   }
   if (estado == 'c') {     // Boton Parar
     microM.Motors(0, 0, 1, 1); // update motor controller
   }
   if (estado == 'd') {      // Boton DER
-    microM.Motors(-velocidad_carro, 0, 0, 0); // update motor controller
+    microM.Motors(0, velocidad_carro, 0, 0); // update motor controller
   }
 
   if (estado == 'e') {      // Boton Reversa
