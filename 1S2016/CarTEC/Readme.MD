@@ -1,5 +1,6 @@
 # CarTEC Repository
-->![alt tag](http://i.imgur.com/MjvDLiX.png)</p><-
+
+<p style="text-align: center"><img src="http://i.imgur.com/MjvDLiX.png" /></p>
 
 Este proyecto consiste en un carrito que puede ser manejado utilizando una app instalada sobre un teléfono con sistema operativo Android.
 
