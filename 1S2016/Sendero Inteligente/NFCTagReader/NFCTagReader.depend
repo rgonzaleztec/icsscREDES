@@ -1,0 +1,188 @@
+# depslib dependency file v1.0
+1466101507 source:/home/pi/Desktop/NFCTagReader/main.c
+	"config.h"
+	<err.h>
+	<stdio.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	"nfc.h"
+	"nfc-utils.h"
+
+1466034842 /home/pi/Desktop/NFCTagReader/nfc.h
+	<sys/time.h>
+	<stdint.h>
+	<stdbool.h>
+	"nfc-types.h"
+
+1393255007 /home/pi/Desktop/NFCTagReader/nfc-types.h
+	<stddef.h>
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+
+1393255007 /home/pi/Desktop/NFCTagReader/nfc-utils.h
+	<stdlib.h>
+	<string.h>
+	<err.h>
+
+1466035325 source:/home/pi/Desktop/NFCTagReader/nfc-utils.c
+	"nfc.h"
+	<err.h>
+	"nfc-utils.h"
+
+1393255007 source:/home/pi/Desktop/NFCTagReader/log.c
+	"log.h"
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdio.h>
+	<stdarg.h>
+	<fcntl.h>
+	"log-internal.h"
+
+1393255007 /home/pi/Desktop/NFCTagReader/log.h
+	"config.h"
+	"nfc-internal.h"
+
+1466039220 /home/pi/Desktop/NFCTagReader/nfc-internal.h
+	<stdbool.h>
+	<err.h>
+	<sys/time.h>
+	"nfc.h"
+	"log.h"
+
+1466098061 source:/home/pi/Desktop/NFCTagReader/nfc-internal.c
+	"nfc.h"
+	"nfc-internal.h"
+	"config.h"
+	"conf.h"
+	<stdlib.h>
+	<string.h>
+	<inttypes.h>
+
+1466038458 source:/home/pi/Desktop/NFCTagReader/target-subr.c
+	<inttypes.h>
+	"nfc.h"
+	"target-subr.h"
+
+1393255007 /home/pi/Desktop/NFCTagReader/target-subr.h
+
+1466101810 source:/home/pi/Desktop/NFCTagReader/nfc.c
+	"config.h"
+	<fcntl.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<string.h>
+	"nfc.h"
+	"nfc-internal.h"
+	"target-subr.h"
+	"drivers.h"
+	"drivers/acr122_pcsc.h"
+	"drivers/acr122_usb.h"
+	"drivers/acr122s.h"
+	"drivers/pn53x_usb.h"
+	"drivers/arygon.h"
+	"drivers/pn532_uart.h"
+	"drivers/pn532_spi.h"
+	"drivers/pn532_i2c.h"
+
+1466038518 /home/pi/Desktop/NFCTagReader/drivers.h
+	"nfc-types.h"
+
+1466097996 source:/home/pi/Desktop/NFCTagReader/iso14443-subr.c
+	"config.h"
+	<stdio.h>
+	<string.h>
+	"nfc.h"
+	"nfc-internal.h"
+
+1466098919 source:/home/pi/Desktop/NFCTagReader/pn532_spi.c
+	"config.h"
+	"pn532_spi.h"
+	<stdio.h>
+	<inttypes.h>
+	<string.h>
+	"nfc.h"
+	"drivers.h"
+	"nfc-internal.h"
+	"pn53x.h"
+	"pn53x-internal.h"
+	"spi.h"
+	<unistd.h>
+	<time.h>
+	<winbase.h>
+
+1466098465 /home/pi/Desktop/NFCTagReader/pn532_spi.h
+	"nfc-types.h"
+
+1466098838 /home/pi/Desktop/NFCTagReader/pn53x.h
+	"nfc-types.h"
+	"pn53x-internal.h"
+
+1393255007 /home/pi/Desktop/NFCTagReader/pn53x-internal.h
+	"log.h"
+
+1466098838 /home/pi/Desktop/NFCTagReader/spi.h
+	<sys/time.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<linux/spi/spidev.h>
+	"nfc-types.h"
+
+1393255007 source:/home/pi/Desktop/NFCTagReader/mirror-subr.c
+	"config.h"
+	<stdio.h>
+	"mirror-subr.h"
+
+1466100580 /home/pi/Desktop/NFCTagReader/mirror-subr.h
+	<stdint.h>
+	"nfc-types.h"
+
+1466099899 source:/home/pi/Desktop/NFCTagReader/pn53x.c
+	"config.h"
+	<inttypes.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdlib.h>
+	"nfc.h"
+	"nfc-internal.h"
+	"pn53x.h"
+	"pn53x-internal.h"
+	"mirror-subr.h"
+
+1466098838 source:/home/pi/Desktop/NFCTagReader/spi.c
+	"config.h"
+	"spi.h"
+	<sys/ioctl.h>
+	<sys/select.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/types.h>
+	<ctype.h>
+	<dirent.h>
+	<errno.h>
+	<fcntl.h>
+	<limits.h>
+	<stdio.h>
+	<termios.h>
+	<unistd.h>
+	"nfc.h"
+	"nfc-internal.h"
+
+1464826876 /home/pi/Desktop/NFCTagReader/config.h
+
+1393255007 source:/home/pi/Desktop/NFCTagReader/nfc-device.c
+	<stdlib.h>
+	<string.h>
+	"config.h"
+	"nfc-internal.h"
+
+1466102116 /home/pi/Desktop/NFCTagReader/conf.h
+	"nfc-types.h"
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NFCTagReader" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/NFCTagReader" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/NFCTagReader" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="conf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="conf.h" />
+		<Unit filename="drivers.h" />
+		<Unit filename="iso14443-subr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="log.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mirror-subr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mirror-subr.h" />
+		<Unit filename="nfc-device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nfc-internal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nfc-internal.h" />
+		<Unit filename="nfc-types.h" />
+		<Unit filename="nfc-utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nfc-utils.h" />
+		<Unit filename="nfc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nfc.h" />
+		<Unit filename="pn532_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pn532_spi.h" />
+		<Unit filename="pn53x-internal.h" />
+		<Unit filename="pn53x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pn53x.h" />
+		<Unit filename="spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spi.h" />
+		<Unit filename="target-subr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="target-subr.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

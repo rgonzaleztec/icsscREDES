@@ -1,0 +1,11 @@
+python -m pip install --upgrade pip
+
+pip install numpy
+pip install scipy
+pip install scikit-learn
+
+https://www.youtube.com/watch?v=PtKuQf8z7HI
+
+chmod +x myscript.sh
+sudo cp myscript.sh /usr/bin/myscript
+sudo cp myscript.sh /usr/local/bin
