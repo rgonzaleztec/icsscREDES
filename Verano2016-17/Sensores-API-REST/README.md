@@ -10,13 +10,19 @@
 
 
 # Descripción del Proyecto a desarrollar
-Se debe crear una red de sensores utilizando componentes de arduino, los sensores a utilizar medirán, temperatura, humedad, carbono, gas,
-luminosidad, se pueden agregar algunos otros más. Estos sensores deben de poderse almacenar en la Nube mediante un REST API y este API debe proporcionar
+Se debe crear una red de sensores utilizando componentes de arduino, los sensores a utilizar medirán, temperatura, humedad, carbono, se pueden agregar algunos otros más. Estos sensores deben de poderse almacenar en la Nube mediante un REST API y este API debe proporcionar
 métodos que permitan consultar el estado actual de esos sensores.
 Cuando algunos de estos sensores se dispare sobre los niveles permitidos se debe de enviar una alarma.
 Los sensores se conectarán por Wireless a la Red del TEC.
 
 # Materiales empleados.
+* Cable de red (utilizados para conectar los sensores).
+* Arduino Yun.
+* Sensores MQ-7 y DHT11.
+* Servidor de Parse.
+
+#Manual de usuario
+En el video que se adjuntará a continuación se explicará cómo conectar los componentes al Arduino, también, cómo obtener el Token para enviar datos hacia el servidor y por último, el código que se debe implementar desde el Arduino. 
 
 
 # Entregables para calificar
