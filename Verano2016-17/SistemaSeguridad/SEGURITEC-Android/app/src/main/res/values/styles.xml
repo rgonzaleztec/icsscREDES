@@ -1,0 +1,122 @@
+
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+
+        <!-- toolbar -->
+        <item name="colorPrimary">@color/actionbar_background</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:textColorPrimary">@color/textBarColor</item>
+
+        <!-- colors -->
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorHint">@color/textColorSecondary</item>
+        <item name="colorAccent">@color/actionbar_background</item>
+        <item name="colorControlHighlight">@color/primaryDark</item>
+
+        <!-- toolbar styles -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/ActionModeStyle</item>
+        <item name="actionMenuTextColor">@color/textBarColor</item>
+    </style>
+
+    <!-- app theme (default version) -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Drawer" />
+
+    <!-- labels in detail screens -->
+     <style name="LabelTextStyle" parent="TextStyle">
+        <item name="android:minHeight">36dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+    <!-- remove action bar from login activity -->
+    <style name="NoActionBar" parent="AppTheme">
+    </style>
+
+    <!-- base styles for the login form -->
+    <style name="SignInEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:autoText">false</item>
+        <item name="android:capitalize">none</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+    </style>
+    <style name="StoresMapDetail_view0" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="StoresMapDetail_view1" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#d8d22c</item>
+    </style>
+    <style name="StoresMapDetail_view2" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="StoresMapDetail_view3" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#4b7c3c</item>
+    </style>
+    <style name="StoresMapDetail_view4" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Reviews_title" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Reviews_subtitle" parent="TextStyle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="ReviewsDetail_view0" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="ReviewsDetail_view1" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#d8d22c</item>
+    </style>
+    <style name="ReviewsDetail_view2" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="ReviewsDetail_view3" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#4b7c3c</item>
+    </style>
+    <style name="ReviewsDetail_view4" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Ranking_title" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Ranking_content" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Acerca_view0" parent="TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+</resources>

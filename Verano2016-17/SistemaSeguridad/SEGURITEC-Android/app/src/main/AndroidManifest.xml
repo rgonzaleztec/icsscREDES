@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibm.mobileappbuilder.pkg20161229210345" >
+
+    <permission android:name="com.ibm.mobileappbuilder.pkg20161229210345.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.ibm.mobileappbuilder.pkg20161229210345.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAFV-c0x_D6UUFpJUHu93gwy85CF165IlQ"/>
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.ReviewsFilterActivity"
+            android:label="@string/reviewsFilterActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.StoresMapActivity"
+            android:label="@string/storesMapActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.StoresMapDetailActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.ReviewsActivity"
+            android:label="@string/reviewsActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.ReviewsDetailActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.ReviewsFormFormActivity"
+            android:label="@string/reviewsFormFormActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.RankingActivity"
+            android:label="@string/rankingActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.GraficoActivity"
+            android:label="@string/graficoActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.AcercaActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.pkg20161229210345.ui.SEGURITECMainActivity"
+            android:label="@string/seguritecMainActivity"
+            android:theme="@style/AppTheme.Drawer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:theme="@style/NoActionBar"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+    </application>
+
+</manifest>

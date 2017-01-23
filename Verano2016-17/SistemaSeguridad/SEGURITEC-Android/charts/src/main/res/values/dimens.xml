@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- charts -->
+    <dimen name="title_font_size">16sp</dimen>
+    <dimen name="legend_text_font_size">12px</dimen>
+    <dimen name="legend_form_size">9px</dimen>
+    <dimen name="x_axis_domain_label_font_size">12px</dimen>
+    <dimen name="y_axis_domain_label_font_size">14px</dimen>
+    <dimen name="pie_value_font_size">12px</dimen>
+
+    <!-- margins -->
+    <dimen name="margin_top_chart_title">8dp</dimen>
+    <dimen name="margin_bottom_chart_legend">2dp</dimen>
+</resources>

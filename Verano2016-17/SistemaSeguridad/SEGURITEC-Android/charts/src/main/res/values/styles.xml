@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- chart title style -->
+    <style name="chart_title_style" parent="TextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_chart_title</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+</resources>

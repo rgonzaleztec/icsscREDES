@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string name="app_name">SEGURITEC</string>
+
+    <!-- Activity Titles -->
+    <string formatted="false" name="reviewsFilterActivity">Alertas</string>
+    <string formatted="false" name="storesMapActivity">Ubicación Maps</string>
+    <string formatted="false" name="reviewsActivity">Alertas</string>
+    <string formatted="false" name="reviewsFormFormActivity"></string>
+    <string formatted="false" name="rankingActivity">Historial</string>
+    <string formatted="false" name="graficoActivity">Gráfico</string>
+    <string formatted="false" name="seguritecMainActivity">SEGURITEC</string>
+	
+	<!-- Navigation Titles -->
+    <string name="mainmenu_entry0">Ubicaciones</string>
+    <string name="mainmenu_entry1">Alertas</string>
+    <string name="mainmenu_entry2">Historial</string>
+    <string name="mainmenu_entry3">Gráfico</string>
+    <string name="mainmenu_entry4">Acerca</string>
+    <string name="mainmenu_entry5">Log Out</string>
+</resources>
+

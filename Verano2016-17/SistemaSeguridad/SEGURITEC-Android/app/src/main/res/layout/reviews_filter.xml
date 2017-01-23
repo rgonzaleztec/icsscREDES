@@ -1,0 +1,64 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:scrollbarStyle="outsideOverlay"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@drawable/divider">
+            
+            <ibmmobileappbuilder.views.DateRangePicker
+                android:id="@+id/reviewedon_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:label="reviewedon">
+            </ibmmobileappbuilder.views.DateRangePicker>
+            
+            <!-- last item divider -->
+            <View android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset"
+            android:textColor="@color/textColor"
+            style="?android:attr/borderlessButtonStyle" />
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/ok"
+            android:textColor="@color/textColor"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
