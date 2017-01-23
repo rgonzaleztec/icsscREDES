@@ -23,6 +23,7 @@ Los sensores se conectarán por Wireless a la Red del TEC.
 
 #Manual de usuario
 En el video que se adjuntará a continuación se explicará cómo conectar los componentes al Arduino, también, cómo obtener el Token para enviar datos hacia el servidor y por último, el código que se debe implementar desde el Arduino. 
+[![Click para ver el video](http://therealdanvega.com/wp-content/uploads/2016/02/YouTube-logo-play-icon-e1455109429590.png)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
 
 
 # Entregables para calificar
