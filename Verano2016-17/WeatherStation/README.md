@@ -3,7 +3,10 @@
 * [Team Members](#team-members)
 
 # <a name="team-members"></a>Team Members
-* "Henry Solis Chacón" <xxxxx@dominio.com>
+* "Henry Solis Chacón" <hsolicha@gmail.com>
+* "Hellen Rojas Rojas" <kari0695@gmail.com>
+* "Gabriel Jimenez Vargas" <gabjimenezv@gmail.com>
+* "Ivannia Abarca Sanchez" <iabarca92@gmail.com>
 
 # Descripción del Proyecto a desarrollar
 Se debe diseñar una estación meteorológica portátil con conexión remota, la estación debe estar enviando constantemente insformación a una
@@ -21,4 +24,4 @@ Se deben hacer pruebas con los equipos ya instalados en la Sede.
 
 
 # Fecha de Entrega completa y FINAL
-<b> Lunes 23 de Enero de 2017 </b>
+<b> Miercoles 25 de Enero de 2017 </b>

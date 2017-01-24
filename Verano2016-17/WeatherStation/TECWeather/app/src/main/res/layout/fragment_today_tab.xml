@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TodayTab">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="TEC, San Carlos, Santa Clara"
+            android:id="@+id/textView"
+            android:layout_marginTop="70dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="25dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/estadoDia"
+            android:src="@drawable/rain_icon"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="35dp"
+            android:contentDescription="asd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Grados"
+            android:id="@+id/gradosToday"
+            android:textSize="40dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginEnd="42dp"
+            android:layout_alignTop="@+id/estadoDia"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="33dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/windy_day"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/estadoDia"
+            android:layout_alignStart="@+id/estadoDia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="velocidad"
+            android:id="@+id/velocidadToday"
+            android:layout_marginLeft="26dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignEnd="@+id/estadoDia" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView5"
+            android:src="@drawable/humedity"
+            android:layout_alignBottom="@+id/humedadToday"
+            android:layout_alignStart="@+id/imageView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="humedad"
+            android:id="@+id/humedadToday"
+            android:layout_marginLeft="26dp"
+            android:layout_below="@+id/velocidadToday"
+            android:layout_alignEnd="@+id/velocidadToday"
+            android:layout_marginTop="23dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/luz"
+            android:layout_alignBottom="@+id/luzToday"
+            android:layout_alignStart="@+id/imageView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="luz"
+            android:id="@+id/luzToday"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/humedadToday"
+            android:layout_alignStart="@+id/humedadToday" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/logo_tec"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="fecha"
+            android:id="@+id/fechaToday"
+            android:layout_marginBottom="28dp"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</FrameLayout>
