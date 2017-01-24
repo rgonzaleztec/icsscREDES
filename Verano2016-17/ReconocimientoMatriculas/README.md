@@ -3,7 +3,7 @@
 * [Team Members](#team-members)
 
 # <a name="team-members"></a>Team Members
-* "Carlos Solis Solis" <xxxxx@dominio.com>
+* "Carlos Arturo Solis Solis" <carlos.art.solis.s@gmail.com>
 
 # Descripción del Proyecto a desarrollar
 Desarrollar un sistema de reconocimiento de sonidos de altos desiveles que permita identificar un vehículo que esta produciendo alto ruido,
