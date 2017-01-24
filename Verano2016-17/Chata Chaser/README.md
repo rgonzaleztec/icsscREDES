@@ -4,6 +4,7 @@
 
 # <a name="team-members"></a>Team Members
 * "Carlos Arturo Solis Solis" <carlos.art.solis.s@gmail.com>
+* "Daryn Gerardo Soto Soto" <carlos.art.solis.s@gmail.com>
 
 # Descripción del Proyecto a desarrollar
 Desarrollar un sistema de reconocimiento de sonidos de altos desiveles que permita identificar un vehículo que esta produciendo alto ruido,
