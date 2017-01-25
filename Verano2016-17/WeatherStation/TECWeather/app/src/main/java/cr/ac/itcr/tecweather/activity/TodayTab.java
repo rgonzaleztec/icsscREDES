@@ -2,6 +2,7 @@ package cr.ac.itcr.tecweather.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Console;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -32,6 +34,7 @@ import cr.ac.itcr.tecweather.model.Weather;
 
 public class TodayTab extends Fragment {
     private String TAG = Weather.class.getSimpleName();
+    private SwipeRefreshLayout swipeContainer;
 
     ImageView today;
     TextView grados;
@@ -52,9 +55,39 @@ public class TodayTab extends Fragment {
         velocidad = (TextView)view.findViewById(R.id.velocidadToday);
         fecha = (TextView)view.findViewById(R.id.fechaToday);
 
+        // Lookup the swipe container view
+        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.swipeContainer);
+        // Setup refresh listener which triggers new data loading
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                // Your code to refresh the list here.
+                // Make sure you call swipeContainer.setRefreshing(false)
+                // once the network request has completed successfully.
+                fetchTimelineAsync(0);
+            }
+        });
+        // Configure the refreshing colors
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+                android.R.color.holo_green_light,
+                android.R.color.holo_orange_light,
+                android.R.color.holo_red_light);
+
+
         getBrief();
         return  view;
     }
+
+    public void fetchTimelineAsync(int page) {
+        // Send the network request to fetch the updated data
+        // `client` here is an instance of Android Async HTTP
+        // getHomeTimeline is an example endpoint.
+
+        getBrief();
+        swipeContainer.setRefreshing(false);
+
+    }
+
     public void getBrief(){
         String endPoint = EndPoints.USER.replace("ID/LIMIT", "developmentStation/1");
 
@@ -77,10 +110,9 @@ public class TodayTab extends Fragment {
 
 
                             String temp = Float.toString(resumen.getLong("temperatureC")) + "°C";
-                            String veloc = Float.toString(resumen.getLong("windspeedmph")) + "mph";
-                            String humed = Float.toString(resumen.getLong("humidity")) + "%";
-                            String lumi = Float.toString(resumen.getLong("light")) + "cd";
-
+                            String veloc = Float.toString(resumen.getLong("windspeedmph")) + " mph";
+                            String humed = Double.toString(resumen.getDouble("humidity")) + "%";
+                            String lumi = Double.toString(resumen.getDouble("light")) + " cd";
 
                             //convertir formato de milisegundos de fecha
                             // Create a DateFormatter object for displaying date in specified format.
@@ -98,13 +130,25 @@ public class TodayTab extends Fragment {
                             fecha.setText(time);
                             luz.setText(lumi);
 
-                            Calendar now = Calendar.getInstance();
-                            if(now.get(Calendar.AM_PM) == Calendar.AM){
+
+                            Boolean isNight;
+                            Calendar cal = Calendar.getInstance();
+                            int hour = cal.get(Calendar.HOUR_OF_DAY);
+                            isNight = hour < 6 || hour > 18;
+                            if(isNight){
                                 today.setImageResource(R.drawable.noght);
-                            }
-                            else{
+                            } else {
                                 today.setImageResource(R.drawable.day);
                             }
+
+
+                           /* Calendar now = Calendar.getInstance();
+                            if(now.get(Calendar.AM_PM) == Calendar.PM){
+
+                            }
+                            else{
+
+                            }*/
 
 
 

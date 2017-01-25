@@ -1,8 +1,15 @@
 package cr.ac.itcr.tecweather.activity;
 
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -22,6 +29,7 @@ import android.widget.TextView;
 import cr.ac.itcr.tecweather.R;
 import cr.ac.itcr.tecweather.app.MyApplication;
 import cr.ac.itcr.tecweather.model.User;
+import me.relex.circleindicator.CircleIndicator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,19 +47,67 @@ public class MainActivity extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    private CircleIndicator indicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // getActivity() will hand over the context to the method
+        // if you call this inside an activity, simply replace getActivity() by "this"
+        if(!isConnected(this)) buildDialog(this).show();
+        else {
+            // we have internet connection, so it is save to connect to the internet here
+            mViewPager = (ViewPager) findViewById(R.id.container);
+            indicator = (CircleIndicator) findViewById(R.id.indicator);
+            /** set the adapter for ViewPager */
+            mViewPager.setAdapter(new SectionsPagerAdapter(getSupportFragmentManager()));
+            indicator.setViewPager(mViewPager);
+        }
 
 
 
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        /** set the adapter for ViewPager */
-        mViewPager.setAdapter(new SectionsPagerAdapter(getSupportFragmentManager()));
-        // user successfully logged
+    }
 
+    public boolean isConnected(Context context) {
+
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netinfo = cm.getActiveNetworkInfo();
+
+        if (netinfo != null && netinfo.isConnectedOrConnecting()) {
+            android.net.NetworkInfo wifi = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+            android.net.NetworkInfo mobile = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+
+            if((mobile != null && mobile.isConnectedOrConnecting()) || (wifi != null && wifi.isConnectedOrConnecting())) return true;
+            else return false;
+        } else return false;
+    }
+
+    public AlertDialog.Builder buildDialog(Context c) {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(c);
+        builder.setTitle("Sin Conexión a Internet.");
+        builder.setMessage("No tienes acceso a internet, utliza Datos Móviles o Wifi.");
+
+        builder.setPositiveButton("Entendido", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                dialog.dismiss();
+            }
+        });
+        builder.setNeutralButton("Wifi", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivity(new Intent(
+
+                        Settings.ACTION_WIFI_SETTINGS));
+                        dialog.dismiss();
+            }
+        });
+
+        return builder;
     }
 
 
