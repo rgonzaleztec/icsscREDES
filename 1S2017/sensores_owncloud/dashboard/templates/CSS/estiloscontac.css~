@@ -1,0 +1,206 @@
+body {
+	background-image: url("http://www.best-free-wallpapers.xyz/wp-content/uploads/2016/05/background-images-for-websites-free-wallpaper.jpg");
+    background-color: rgb(43,58,66);
+}
+article{
+	border: 3px solid white;
+	margin: 100px 150px 100px 80px;
+}
+section.uno{
+	margin: 100px 0px 100px 100px;
+	width: 400px;
+}
+section.dos{
+	margin: -380px 50px 100px 700px;
+}
+
+article.login{
+	border: none;
+	margin: 100px 150px 100px 550px;
+	font-size: 30px;
+}
+article.portafolio{
+	
+	margin: 100px 150px 100px 350px;
+	font-size: 20px;
+	border: none;
+}
+
+h1{
+	font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+}
+
+h1,h2 {
+    color: lightblue;
+    text-align: center;
+
+}
+h5.adm {
+    color: lightblue;
+    font-size: 25px;
+}
+h5{
+	color: white;
+	margin-left: 20px;
+}
+h5.usuario{
+	color: white;
+	margin-left: 25px;
+}
+li{
+    color: rgb(189,212,222);
+	font-size: 20px;
+}
+
+fieldset{
+	color: white;
+	padding: 20px;
+}
+
+form{
+	color: white;
+}
+
+p {
+	color: white;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+p.login {
+	color: white;
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+}
+footer{
+	color: rgb(189,212,222);
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+}
+input[type=date]:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+}
+
+aside {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+ 	display: block;
+    color: #000;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+}
+
+a.adm {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 120px;
+    padding: 20px 15px 20px 15px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: collapse;
+}
+
+.button,button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.oculta{
+	display: none;
+}
+.visible{
+	display: block;
+}
+
+
+.button4,.button5,.button6 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button4:hover {
+    background-color: green;
+    color: white;
+}
+
+
+.button5:hover {
+    background-color: red;
+    color: white;
+}
+.button6:hover {
+    background-color: #555555;
+    color: white;
+}

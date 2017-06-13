@@ -1,0 +1,227 @@
+body{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+table#projects{
+	border: 2px solid black;
+}
+
+.semester_holder {
+	margin: auto;
+	width: 90%;
+	text-align: center;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.semester {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+th{
+	font-family: BellGothicStd;
+	font-size: 18px;
+	text-align: left;
+    padding: 8px;
+}
+select{
+	width: 200px;
+	height: 40px;
+}
+
+td,input,select {
+	font-family: Ragtime-Light;font-size: 18px;
+    text-align: left;
+    padding: 8px;
+}
+
+.semester th {
+    color: white;
+}
+
+.semester tr:nth-child(even){
+}
+
+.submit_hidden{
+	visibility: collapse;
+}
+
+.addCourseButton_hidden{
+	visibility: collapse;
+}
+
+.addCourseButton_visible{
+	visibility: visible;
+    text-align: center;
+    margin: auto;
+}	
+
+.addCourseButton{
+	font-family: Tekton Pro;
+	font-size: 18px;
+	color: #fff;
+    text-align: left;
+    padding: 8px;
+    visibility: visible;
+    text-align: center;
+    background-color: black;
+}
+
+.addCourseButton:active {
+   background: #653432;
+}
+
+.addCourse_hidden {
+	visibility: collapse;
+	top: 0;	left: 0; bottom: 0; right: 0; position: absolute;
+}
+
+.addCourse_visible {
+	border-collapse: collapse;
+	margin: auto;
+	visibility: visible;
+}
+
+.editCourse_hidden{
+	visibility: collapse;
+	top: 0;	left: 0; bottom: 0; right: 0; position: absolute;
+}
+
+.editCourse_visible{
+	border-collapse: collapse;
+	margin: auto;
+	visibility: visible;
+}
+
+.remove, .add, .edit, .cancel, .confirm{
+	width: 20px;
+	height: 20px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.cancel_left{
+	width: 20px;
+	height: 20px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects_holder {
+	margin: auto;
+	width: 90%;
+	text-align: center;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.projects {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+.projects th, .projects tr {
+    color: black;
+    border: 2px solid black;
+}
+
+.projects tr:nth-child(even){
+}
+
+.addProjectButton_hidden{
+	visibility: collapse;
+}
+
+.addProjectButton_visible{
+	visibility: visible;
+    text-align: center;
+    margin: auto;
+}	
+
+.addProjectButton{
+	font-family: Tekton Pro;
+	font-size: 18px;
+	color: #fff;
+    text-align: left;
+    padding: 8px;
+    background-color: black;
+    visibility: visible;
+    text-align: center;
+}
+
+.addProjectButton:active{
+	background-color: #3F190F;
+}
+
+.addProject_hidden {
+	visibility: collapse;
+	top: 0;	left: 0; bottom: 0; right: 0; position: absolute;
+}
+
+.editProject_visible, .addProject_visible {
+	border-collapse: collapse;
+	margin: auto;
+	visibility: visible;
+}
+
+.editProject_disabled, .addProject_disabled {
+	border-collapse: collapse;
+	margin: auto;
+	visibility: visible;
+	color: rgba(0, 0, 0, 0);
+}
+
+.editProject_hidden, .addProjectCourse_hidden {
+	visibility: collapse;
+	top: 0;	left: 0; bottom: 0; right: 0; position: absolute;
+}
+
+.addProjectCourse_visible {
+	border-collapse: collapse;
+	margin: auto;
+	visibility: visible;
+	position: relative;
+	top: -250px;
+	z-index: 2;
+}
+
+.titleColum{
+	text-align: center !important;
+}
+
+.titleRow{
+	text-align: center !important;
+	visibility: visible;
+}
+
+@media screen and (max-width:1100px) {
+    .addCourse_visible  tr td, 
+    .addProjectCourse_visible tr td{
+        display: block;
+    }
+    .addCourse_visible  tr, 
+    .addProjectCourse_visible tr{
+        display: table-cell;
+    }
+    .addProjectCourse_visible{
+    	position: relative;
+		top: 0;
+    }
+    .addCourse_visible .cancel, 
+    .addProjectCourse_visible .cancel{
+    	float: left !important;
+    }
+    .titleColum{
+    	visibility: collapse;width: 0;font-size: 0;padding: 0;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .titleRow{
+    	visibility: collapse;width: 0;font-size: 0;padding: 0;
+    }
+}
